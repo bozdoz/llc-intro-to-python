@@ -1,30 +1,59 @@
-# Here is a list of many numbers
+# You are given a list of years in which people were born
+#
 # Use variables, for loops, and if statements to complete the following tasks
 
-numbers = [2,14,144,62,1729,44,101,210,6,12,33,550,1001,11,142,674,
-           37,45,167,764,999,3,66,174,982,112,245,501,63,91]
+birth_years = [2002, 1985, 2007, 1963, 1982, 1976,
+               2006, 2010, 1994, 1992, 1971, 1994, 2000, 1991,
+               1961, 1984, 2003, 2006, 1998, 1981, 1962, 2007]
 
-# Task 1: count how many numbers are less than 50
+# change current year as needed
+current_year = 2018
 
-count_under_50 = 0
-for number in numbers:
-    if number < 50:
-        count_under_50 = count_under_50 + 1
+# Task 1: count how many people are more than (hint: greater than) 50 years old
+#
+# ex: if you were born in 1990, and the current year is 2018, then
+# subtracting 1990 from 2018 gives us 28 years.
 
-print 'There are '+ str(count_under_50) + ' numbers under 50 in this list.'
+count_1 = 0
+# for every year
+for year in birth_years:
+    # age is current year - given year
+    age = current_year - year
+    # is the difference in years greater than 50?
+    if age > 50:
+        # then add 1 to our count variable
+        count_1 = count_1 + 1
 
-# Task 2: count how many numbers are greater than 500 and less than 1000
-count_over_500_less_1000 = 0
-for number in numbers:
-    if number > 500 and number < 1000:
-        count_over_500_less_1000 = count_over_500_less_1000 + 1
+print('There are '+ str(count_1) + ' people over 50 in this list.')
 
-print 'There are '+ str(count_over_500_less_1000) + ' numbers between 500 and 1000 in this list.'
+# Task 2: count how many people are more than (hint: greater than)
+# 20 years old and less than 30 years old
 
-# Bonus: count how many numbers are odd
-count_odd_numbers = 0
-for number in numbers:
-    if number % 2 != 0:
-        count_odd_numbers = count_odd_numbers + 1
+count_2 = 0
+# for every year
+for year in birth_years:
+    # age is current year - given year
+    age = current_year - year
+    # is the age greater than 20 and is the age less than 30?
+    if age > 20 and age < 30:
+        # then add 1 to our count variable
+        count_2 = count_2 + 1
 
-print 'There are '+ str(count_odd_numbers) + ' odd numbers in this list.'
+print('There are '+ str(count_2) + ' people between ages 20 and 30 in this list.')
+
+# Bonus: what is the average age of this list of people?
+count_3 = 0
+sum_3 = 0
+# for every year
+for year in birth_years:
+    # add 1 to our count variable
+    count_3 = count_3 + 1
+    # add the year to our sum variable
+    sum_3 = sum_3 + year
+
+# the average (mean) is sum divided by count
+avg_year = sum_3 / count_3
+# age (again) is current year - given year
+avg_age = current_year - avg_year
+
+print('The average age of this list of people is '+ str(avg_age) + ' years old.')

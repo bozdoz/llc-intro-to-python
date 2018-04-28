@@ -1,17 +1,24 @@
-# Here is a list of many numbers
+# You are given a list of years in which people were born
+#
 # Use variables, for loops, and if statements to complete the following tasks
 
-numbers = [2,14,144,62,1729,44,101,210,6,12,33,550,1001,11,142,674,
-           37,45,167,764,999,3,66,174,982,112,245,501,63,91]
+birth_years = [2002, 1985, 2007, 1963, 1982, 1976, 
+    2006, 2010, 1994, 1992, 1971, 1994, 2000, 1991, 
+    1961, 1984, 2003, 2006, 1998, 1981, 1962, 2007]
 
-# Task 1: count how many numbers are less than 50
+# change current year as needed
+current_year = 2018
+
+# Task 1: count how many people are more than (hint: greater than) 50 years old
+#
+# ex: if you were born in 1990, and the current year is 2018, then 
+# subtracting 1990 from 2018 gives us 28 years.
 
 
 
-
-# Task 2: count how many numbers are greater than 500 and less than 1000
-
-
+# Task 2: count how many people are more than (hint: greater than) 
+# 20 years old and less than 30 years old
 
 
-# Bonus: count how many numbers are odd
+
+# Bonus: what is the average age of this list of people?

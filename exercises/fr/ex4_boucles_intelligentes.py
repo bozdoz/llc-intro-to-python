@@ -1,18 +1,22 @@
-# Voici une liste contenant plusieurs nombres
-# Utilisez les variables, les conditions et les boucles pour les exercices ci-bas
+# On vous donne une liste des années de naissance
+#
+# Utiliser les variables, pour les boucles, et if les instructions pour effectuer les tâches suivantes
 
-numbers = [2,14,144,62,1729,44,101,210,6,12,33,550,1001,11,142,674,
-           37,45,167,764,999,3,66,174,982,112,245,501,63,91]
+annees_de_naissance = [2002, 1985, 2007, 1963, 1982, 1976,
+    2006, 2010, 1994, 1992, 1971, 1994, 2000, 1991,
+    1961, 1984, 2003, 2006, 1998, 1981, 1962, 2007]
 
-# Exercice 1: comptez combien de nombres sont inferieurs a 50 et imprimer le resultat
+# change l'année en cours au besoin
+annee_actuelle = 2018
+
+# Tâche 1: compter combien de personnes sont plus de 50 ans
+#
+# ex: si vous êtes né en 1990, et l'année en cours est 2018, alors
+# soustrayant 1990 de 2018 nous donne 28 ans.
 
 
+# Tâche 2: compte combien de personnes sont plus de
+# 20 ans et moins de 30 ans
 
 
-# Exercice 2: comptez combien de nombres sont entre 500 et 1000 exclusivement (plus grands que 500 et moins que 1000)
-# et imprimer le resultat
-
-
-
-
-# Exercice bonus: comptez combien de nombres sont impairs et imprimer le resultat
+# Bonus: quel est l'âge moyen de cette liste de personnes?
